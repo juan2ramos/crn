@@ -1,0 +1,28 @@
+body {
+  font-family: 'Montserrat-Local', sans-serif;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+.middle-items {
+  align-items: center;
+}
+
+.H1 {
+  font-family: 'built-Local', serif;
+  font-size: 4rem;
+  color: var(--primary-color);
+  line-height: .9;
+  @include respond-to(medium){
+    font-size: 9rem;
+  }
+}
+
+.error-message {
+  background: #ffeded;
+  padding: 1.5rem 1.6rem 1.4rem;
+  color: #b11a1a;
+  margin: 1rem 0;
+}

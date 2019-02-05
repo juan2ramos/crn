@@ -1,0 +1,90 @@
+.StartProject {
+  h3 {
+    font-size: 2rem;
+  }
+
+  &-info {
+    background: #f1f1f1;
+    padding: 5rem 2rem 2rem;
+    margin-top: 9rem;
+    &Content {
+      position: relative;
+    }
+
+    &Figure {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    }
+
+    &Link {
+      font-weight: 500;
+      font-size: 2.4rem;
+    }
+  }
+
+  &-radio {
+    &Content {
+      width: 15.6rem;
+      margin: 0 10px;
+      @include respond-to(medium){
+      }
+    }
+
+    &P {
+      text-align: center;
+    }
+  }
+
+  label {
+    font-weight: bold;
+    &.label-input {
+      background: #c9d5f1;
+      position: relative;
+      padding: 2rem 3rem;
+      cursor: pointer;
+      width: 15.6rem;
+      color: var(--primary-color);
+      font-size: 4rem;
+      min-height: 13rem;
+      border-radius: .4rem;
+      font-weight: 500;
+      &:before, &:after {
+        display: none !important;
+      }
+    }
+  }
+
+  input[type=radio],input[type=checkbox] {
+    position: absolute !important;
+    visibility: hidden !important;
+    width: 0;
+
+    &:checked + label {
+      cursor: pointer;
+      background: #5f7fe9;
+      color: white;
+
+      svg g {
+        fill: white;
+      }
+    }
+  }
+  &-question{
+    margin: 3rem 0;
+  }
+  input, textarea, select{
+    border-color: var(--primary-color) !important;
+    padding: 1.6rem !important;
+    max-width: 77rem;
+    margin: 1.6rem 0;
+    background-color: #f1f1f1;
+  }
+  button{
+    font-size: 1.8rem;
+    padding: 1.4rem 3rem 1.1rem;
+    span, svg{
+      vertical-align: middle;
+    }
+  }
+}
