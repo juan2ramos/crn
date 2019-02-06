@@ -89,7 +89,7 @@
                value="{{old('name_company')}}">
     </div>
     <div class="StartProject-question">
-        @if($errors->first('name'))
+        @if($errors->first('url_website'))
             <p class="error-message">Debe ser una URl valida "https://artico.io"</p>
         @endif
         <label for="url_website">URL de tu página web </label>

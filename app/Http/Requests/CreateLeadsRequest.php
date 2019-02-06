@@ -45,7 +45,7 @@ class CreateLeadsRequest extends FormRequest
 
     public function createLead()
     {
-        DB::transaction(function () {
+        return DB::transaction(function () {
             $data = $this->validated();
 
             $lead = Lead::create([
@@ -62,6 +62,8 @@ class CreateLeadsRequest extends FormRequest
             if (!empty ($data['project_type'])) {
                 $lead->services()->attach($data['project_type']);
             }
+            $lead->services = $lead->services()->get()->implode('name',', ');
+            return $lead;
         });
     }
 }

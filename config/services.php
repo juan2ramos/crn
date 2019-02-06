@@ -39,5 +39,7 @@ return [
             'tolerance' => env('STRIPE_WEBHOOK_TOLERANCE', 300),
         ],
     ],
-
+    'slack'     => [
+        'webhook' => env('SLACK_WEBHOOK_URL'),
+    ],
 ];
