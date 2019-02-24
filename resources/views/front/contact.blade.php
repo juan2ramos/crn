@@ -12,7 +12,7 @@
                 </figure>
                 <div class="StartProject-info">
                     <p><b>¿Prefieres hablar directamente?</b></p>
-                    <p>Pregunta por David el sensual</p>
+                    <p></p>
                     <a class="StartProject-infoLink" href="tel:573227753537">(+57) 322 775 3537</a>
                 </div>
             </div>
@@ -130,6 +130,16 @@
             <option value="other" {{old('how_find') =='other'?'selected':''}}>Otro</option>
         </select>
     </div>
+    <p class="m-t-28 m-b-28">
+        <input type="checkbox" id="politic" checked="">
+        <label for="politic" style="background: transparent; color: black;">
+            Acepto los  <a target="_blank" href="https://artico.io/wp-content/uploads/2019/02/politica-de-tratamiento-de-datos.pdf">
+                términos
+            </a> de tratamiento de datos
+
+        </label>
+    </p>
+
     <div>
         <button type="submit">
             <span>Vamos hablar</span>
